@@ -1,0 +1,55 @@
+@import "vendor/bootstrap/bootstrap";
+// Variables
+@bg-color: #f0f0f0;
+@module-bg-color: #fcfcfc;
+@content-width: 970px;
+
+//Mixins
+.center() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Base
+body{
+  background-color: @bg-color;
+}
+
+// Layout
+.header-primary{
+  background: @module-bg-color;
+  margin-bottom: 60px;
+  height: 70px;
+  border-top: 3px solid;
+}
+
+.main-content {
+  width: @content-width;
+  .center();
+}
+
+// Modules
+.navbar-default {
+  background-color: @module-bg-color;
+  border-color: #e7e7e7;
+  width: @content-width;
+  height: 70px;
+  .center();
+  // border: none;
+}
+
+.featured-post{
+  width: 49%;
+  display: inline-block;
+}
+
+.featured-pager {
+  float: right;
+}
+
+.featured-heading {
+  float: left;
+  font-size: 25px;
+}
+
+// State

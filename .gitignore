@@ -43,6 +43,7 @@ what
 *.vi
 *~
 *.sass-cache
+/.sync
 
 # OS or Editor folders
 .DS_Store

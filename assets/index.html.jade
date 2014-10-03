@@ -7,76 +7,83 @@ html
 
   body
     header.header-primary
-      div.row.clearfix
-        div.col-md-12.column
-          nav.navbar.navbar-default(role='navigation')
-            div.navbar-header
-              button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='#') Diagnostics Clinic
-            div#bs-example-navbar-collapse-1.collapse.navbar-collapse
-              ul.nav.navbar-nav.navbar-right
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | For Patients
-                    strong.caret
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Services
-                    strong.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#') Action
-                    li
-                      a(href='#') Another action
-                    li
-                      a(href='#') Something else here
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Resources
-                    strong.caret
-                li
-                  a(href='#') About Us
-                li
-                  a(href='#') Contact
-    div.main-content.row.clearfix
-      div.col-md-4.column
-        div.list-group
-          a.list-group-item(href='#') Access My Records
-          a.list-group-item(href='#') Pay My Bill
-          a.list-group-item(href='#') Book an Appointment
-          a.list-group-item(href='#') Request a Refill
-          a.list-group-item(href='#') Live Chat with a Nurse
-      div.col-md-8.column
-        header.featured-header.clearfix
-          div.featured-heading
-            span.glyphicon.glyphicon-star
-            | Featured
-          div.featured-pager.btn-group
-            button.btn.btn-default(type="button")
-              span.glyphicon.glyphicon-chevron-left
-              | Prev
-            button.btn.btn-default(type="button") Next
-              span.glyphicon.glyphicon-chevron-right
-        div.featured-post
-          h2
-            | Heading
-          p
-            | Texas State's Maternity Information Law requires each hospital to provide the following information about its...
-          p
-            a.btn(href='#') More
-            span.glyphicon.glyphicon-play
-        div.featured-post
-          h2
-            | Heading
-          p
-            | Prescription drug coverage for both Basic and Standard Options covers approved maintenance (long-term) and short-term medications.
-          p
-            a.btn(href='#') More
-            span.glyphicon.glyphicon-play
+      div.container
+        div.row.clearfix
+          div.col-md-12.column
+            nav.navbar.navbar-default(role='navigation')
+              div.navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a.navbar-brand(href='#') Diagnostics Clinic
+              div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | For Patients
+                      strong.caret
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Services
+                      strong.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                      | Resources
+                      strong.caret
+                  li
+                    a(href='#') About Us
+                  li
+                    a(href='#') Contact
+    div.container
+      div.main-content.row.clearfix
+        div.col-md-4.column
+          div.sidebar-nav
+            ul
+              li
+                a(href="#") Access My Records
+              li
+                a(href="#") Pay My Bill
+              li
+                a(href="#") Book an Appointment
+              li
+                a(href="#") Request a Refill
+              li
+                a(href="#") Live Chat with a Nurse
+        div.featured.col-md-8.column
+          header.featured-header.clearfix
+            div.featured-heading
+              span.glyphicon.glyphicon-star
+              | Featured
+            div.featured-pager.btn-group
+              button.btn.btn-default(type="button")
+                span.glyphicon.glyphicon-chevron-left
+                | Prev
+              button.btn.btn-default(type="button") Next
+                span.glyphicon.glyphicon-chevron-right
+          div.featured-posts.clearfix
+            div.featured-post
+              img(src="http://lorempixel.com/355/205/technics/")
+              p
+                | Texas State's Maternity Information Law requires each hospital to provide the following information about its...
+              p
+                a.btn(href='#') More
+                span.glyphicon.glyphicon-play
+            div.featured-post
+              img(src="http://lorempixel.com/355/205/technics/")
+              p
+                | Prescription drug coverage for both Basic and Standard Options covers approved maintenance (long-term) and short-term medications.
+              p
+                a.btn(href='#') More
+                span.glyphicon.glyphicon-play
 
 
     script(src='/socket.io/socket.io.js')

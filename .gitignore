@@ -11,6 +11,7 @@
 
 # Ignore all logfiles and tempfiles.
 *.log
+*.TMP
 /tmp
 
 ## Ignore all generated files

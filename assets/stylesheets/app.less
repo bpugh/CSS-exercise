@@ -3,6 +3,7 @@
 @bg-color: #f0f0f0;
 @module-bg-color: #fcfcfc;
 @content-width: 970px;
+@brand-primary: #1cc7b3;
 
 //Mixins
 .center() {
@@ -55,16 +56,6 @@ body{
   cursor: pointer;
 }
 
-.featured img {
-  width: 100%;
-}
-
-.featured-post{
-  background-color: @module-bg-color;
-  width: 49%;
-  display: inline-block;
-}
-
 .featured-pager {
   float: right;
 }
@@ -73,5 +64,49 @@ body{
   float: left;
   font-size: 25px;
 }
+
+.featured img {
+  width: 100%;
+}
+
+.featured-posts {
+  margin-top: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+.featured-post {
+  display: inline-block;
+  float: left;
+  width: 46%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: @module-bg-color;
+}
+
+.featured-caption {
+  border-top: 1px solid #e4e4e4; 
+  border-right: 1px solid #d4d6dc; 
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.featured-caption p {
+  height: 70px;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-bottom: 2px solid #e6e6e6;
+  font-size: 14px;
+}
+
+.featured-more {
+  float: right;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  i {
+    font-size: 8px;
+  }
+}
+
 
 // State

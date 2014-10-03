@@ -45,7 +45,7 @@ html
                     a(href='#') Contact
     div.container
       div.main-content.row.clearfix
-        div.col-md-4.column
+        div.col-md-3.column
           div.sidebar-nav
             ul
               li
@@ -58,7 +58,7 @@ html
                 a(href="#") Request a Refill
               li
                 a(href="#") Live Chat with a Nurse
-        div.featured.col-md-8.column
+        div.featured.col-md-9.column
           header.featured-header.clearfix
             div.featured-heading
               span.glyphicon.glyphicon-star
@@ -72,18 +72,20 @@ html
           div.featured-posts.clearfix
             div.featured-post
               img(src="http://lorempixel.com/355/205/technics/")
-              p
-                | Texas State's Maternity Information Law requires each hospital to provide the following information about its...
-              p
-                a.btn(href='#') More
-                span.glyphicon.glyphicon-play
+              div.featured-caption.clearfix
+                p
+                  | Texas State's Maternity Information Law requires each hospital to provide the following information about its...
+                div.featured-more
+                  a(href='#') More 
+                  i.glyphicon.glyphicon-play
             div.featured-post
               img(src="http://lorempixel.com/355/205/technics/")
-              p
-                | Prescription drug coverage for both Basic and Standard Options covers approved maintenance (long-term) and short-term medications.
-              p
-                a.btn(href='#') More
-                span.glyphicon.glyphicon-play
+              div.featured-caption.clearfix
+                p
+                  | Prescription drug coverage for both Basic and Standard Options covers approved maintenance (long-term) and short-term medications.
+                div.featured-more
+                  a(href='#') More 
+                  i.glyphicon.glyphicon-play
 
 
     script(src='/socket.io/socket.io.js')

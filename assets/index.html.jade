@@ -21,7 +21,6 @@ html
                   span.icon-bar
                   span.icon-bar
                   span.icon-bar
-                //- a.navbar-brand(href='#') Diagnostics Clinic
                 div.header-brand
                   img(src="images/logo.png")
                   | Diagnostic 
@@ -76,11 +75,11 @@ html
               span.glyphicon.glyphicon-star
               | Featured
             div.featured-pager.btn-group
-              button.btn.btn-default(type="button")
-                span.glyphicon.glyphicon-chevron-left
+              button.btn.prev-btn.btn-default(type="button", disabled)
+                span.prev-icon.glyphicon.glyphicon-play.disabled
                 | Prev
-              button.btn.btn-default(type="button") Next
-                span.glyphicon.glyphicon-chevron-right
+              button.btn.next-btn.btn-default(type="button") Next
+                span.next-icon.glyphicon.glyphicon-play
           div.featured-posts.clearfix
             div.featured-post
               div.featured-img
@@ -94,7 +93,7 @@ html
                   | Texas State's Maternity Information Law requires each hospital to provide the following information about its...
                 div.featured-more
                   a(href='#') More 
-                  i.glyphicon.glyphicon-play
+                    i.glyphicon.glyphicon-play
             div.featured-post
               div.featured-img
                 img(src="http://lorempixel.com/355/205/technics/")
